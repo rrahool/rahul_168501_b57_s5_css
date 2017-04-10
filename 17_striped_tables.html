@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Striped Table</title>
+    <style>
+        th, td{
+            text-align: center;
+            padding: 10px;
+        }
+        table{
+            width: 80%;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        tr:nth-child(even){
+            background-color: gray;
+        }
+        tr:nth-child(odd){
+            background-color: lightcyan;
+        }
+        th{
+            background-color: forestgreen;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add a border to a table:</h2>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Umme</td>
+            <td>Batul</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Rokeya</td>
+            <td>Begum</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Shamim</td>
+            <td>Akter</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Ahmed</td>
+            <td>Shamim</td>
+            <td>$250</td>
+        </tr>
+
+    </table>
+</body>
+</html>

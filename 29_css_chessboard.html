@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Chess Borad</title>
+    <style>
+        body {
+            background:#999;
+        }
+        .container {
+            width:960px;
+            margin:auto;
+
+        }
+        table{
+            border-collapse:collapse;
+            width: 50%;
+
+        }
+        td {
+            height:50px;
+            width:50px;
+        }
+        .black{
+            background:black;
+        }
+        .white {
+            background:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <table>
+
+
+            <script language="javascript">
+
+                for (i=1; i<=8; i++){
+                    document.write("<tr>");
+                    for (j=1; j<=8; j++){
+                        sum = j + i;
+                        if (sum%2==0){
+                            document.write("<td class='black'> </td>");
+                        }
+                        else {
+                            document.write("<td class='white'> </td>");
+                        }
+                    }
+                    document.write("</tr>");
+                }
+
+
+            </script>
+        </table>
+    </div>
+
+</body>
+</html>
